@@ -16,8 +16,6 @@
     let browser=prompt( "Enter the name of your browser" );
     if(browser=='Edge'){
       alert( "You've got the Edge!" );
-    }else if(browser==null){
-      alert( 'We hope that this page looks ok!' );
     }else if(browser=="Chrome"){
       alert( 'Okay we support these browsers too' );
     }else if(browser=="Firefox"){
