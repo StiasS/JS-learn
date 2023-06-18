@@ -1,21 +1,15 @@
-function Calculator() {
-    this.read = function() {
-      this.a = +prompt('Введите а:', 0);
-      this.b = +prompt('Введите б:', 0);
-    };
-  
-    this.sum = function() {
-      return this.a + this.b;
-    };
-  
-    this.mul = function() {
-      return this.a * this.b;
-    };
-  }
-  
-  let calculator = new Calculator();
-  
-  calculator.read();
-  
-  alert('Сумма: ' + calculator.sum());
-  alert('Произведение: ' + calculator.mul());
+let calculator = {
+    sum() {
+        return this.a + this.b
+    },
+    mul() {
+        return this.a * this.b
+    },
+    read() {
+        this.a=+prompt("Задайте а" , 0 );
+        this.b=+prompt("Задайте б" , 0 );
+    }
+};    
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
