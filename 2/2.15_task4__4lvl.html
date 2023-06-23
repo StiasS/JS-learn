@@ -3,15 +3,16 @@
 <body>
   <script>
     'use strict';
-    let result
-     function pow (x,n) {
-      x = +prompt( "Введите x" );
-      n = +prompt( "Введите n" );
-      result= (x**n);
-      alert (result);
-      return;
-    }
-    pow();
+    function random(min,max){
+    let rng
+    min=+prompt("Задайте минимальное число","");
+    max=+prompt("Задайте максимальное число","");
+    rng=Math.random();
+    return Math.floor(min+rng*(max-min));
+}
+alert (random());
+alert (random());
+alert (random());
   </script>
 </body>
 </html>
