@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-    let arr = [ ];
+let arr = [ ];
 function sumInput(){
     let a =prompt("Введите число","0");
     while (a !== undefined && !isNaN(a)){
@@ -20,6 +16,3 @@ function sumInput(){
       alert(sumArray());
 }
 sumInput()
-  </script>
-</body>
-</html>
