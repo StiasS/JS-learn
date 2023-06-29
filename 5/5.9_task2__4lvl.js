@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  function count(obj){
+function count(obj){
     let i=0
     for (let slova of Object.values(obj)) {
         i++;
@@ -15,6 +11,3 @@ let user = {
   };
   
   alert( count(user) ); // 2
-  </script>
-</body>
-</html>
