@@ -8,7 +8,7 @@ function topSalary(salaries){
     let topEarner = null;
     for (let [name,salary] of Object.entries(salaries)) {
         if (maxSalary<salary){
-            maxSalary=salaries;
+            maxSalary=salary;
             topEarner=name
         };
     }
