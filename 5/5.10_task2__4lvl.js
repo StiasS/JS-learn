@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  let salaries = {
+let salaries = {
     "John": 100,
     "Pete": 300,
     "Mary": 250
@@ -11,14 +7,11 @@ function topSalary(salaries){
     let maxSalary = 0;
     let topEarner = null;
     for (let [name,salary] of Object.entries(salaries)) {
-        if (salary>maxSalary){
-            maxSalary=salary;
+        if (maxSalary<salary){
+            maxSalary=salaries;
             topEarner=name
         };
     }
     return topEarner;
 }
 alert (topSalary(salaries))
-  </script>
-</body>
-</html>
