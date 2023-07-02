@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  let user = {
+let user = {
     name: "Василий Иванович",
     age: 35
   };
 let json=JSON.stringify(user);
 alert(json)
-json=JSON.parse(json)
-  </script>
-</body>
-</html>
+let userCopy=JSON.parse(json)
