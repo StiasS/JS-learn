@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  
-  function makeArmy() {
+function makeArmy() {
     let shooters = [];
   
     let i = 0;
@@ -20,6 +15,3 @@
 }
 let army = makeArmy();
 army[0]();
-  </script>
-</body>
-</html>
