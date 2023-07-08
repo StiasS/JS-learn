@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  
-  function printNumbers(from, to){
+function printNumbers(from, to){
     let i=from;
     function type(){
         alert (i);
@@ -18,6 +13,3 @@
     type();
 }
 printNumbers(1,5)
-  </script>
-</body>
-</html>

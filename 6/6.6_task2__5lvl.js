@@ -9,6 +9,6 @@ function sum(a){
     };
     return addNumber;
 }
-alert(sum(1)(2)(3)(4)); // 10
-alert(sum(5)(10)(15)); // 30
-alert(sum(2)(4)(6)(8)(10)); // 30
+alert(sum(1)(2)(3)(4));
+alert(sum(5)(10)(15)); 
+alert(sum(2)(4)(6)(8)(10));
