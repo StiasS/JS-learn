@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  
-  function askPassword(ok, fail) {
+function askPassword(ok, fail) {
     let password = prompt("Password?", '');
     if (password == "rockstar") ok();
     else fail();
@@ -24,8 +19,5 @@
 function aler (){
     askPassword(user.loginOk, user.loginFail);
 }
-aler()
+aler
   
-  </script>
-</body>
-</html>
