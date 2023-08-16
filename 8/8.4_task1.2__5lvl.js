@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
-  
-  function Rabbit(name) {
+function Rabbit(name) {
     this.name = name;
 }
 Rabbit.prototype.sayHi = function() {
@@ -14,6 +9,3 @@ rabbit.sayHi();//Rabbit
 Rabbit.prototype.sayHi();//undefind
 Object.getPrototypeOf(rabbit).sayHi();//undefind
 rabbit.__proto__.sayHi();//undefind
-  </script>
-</body>
-</html>
