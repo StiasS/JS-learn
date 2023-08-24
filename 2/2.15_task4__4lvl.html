@@ -3,16 +3,10 @@
 <body>
   <script>
   
-  class Rabbit extends Object {
-    constructor(name) {
-      super(),
-      this.name=name
-    }
-  }
-  
-  let rabbit = new Rabbit("Кроль");
-  
-  alert( rabbit.hasOwnProperty('name') ); // Ошибка
+  showCircle(150, 150, 100, div => {
+  div.classList.add('message-ball');
+  div.append("Hello, world!");
+});
   </script>
 </body>
 </html>

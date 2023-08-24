@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .circle {
+      transition-property: width, height;
+      transition-duration: 2s;
+      position: fixed;
+      transform: translateX(-1%) translateY(-50%);
+      background-color: rgb(255, 0, 0);
+      border-radius: 0%;
+    }
+    .circle2 {
+      transition-property: width, height;
+      transition-duration: 2s;
+      position: fixed;
+      transform: translateX(-1%) translateY(-50%);
+      background-color: rgb(0, 26, 255);
+      border-radius: 0%;
+    }
+    .circle3 {
+      transition-property: width, height;
+      transition-duration: 2s;
+      position: fixed;
+      transform: translateX(-1%) translateY(-50%);
+      background-color: rgb(0, 255, 157);
+      border-radius: 50%;
+    }
+    .circle4 {
+      transition-property: width, height;
+      transition-duration: 2s;
+      position: fixed;
+      transform: translateX(-1%) translateY(-50%);
+      background-color: rgb(168, 90, 149);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+  <script>
+  function c1(cx, cy, radius) {
+    let div = document.createElement('div');
+    div.style.width = 0;
+    div.style.height = 0;
+    div.style.left = cx + 'px';
+    div.style.top = cy + 'px';
+    div.className = 'circle';
+    document.body.append(div);
+
+    setTimeout(() => {
+      div.style.width = radius * 2 + 'px';
+      div.style.height = radius * 2 + 'px';
+    }, 0);};
+    
+</script>
+  <script>
+    function c2(cx, cy, radius) {
+      let div = document.createElement('div');
+      div.style.width = 0;
+      div.style.height = 0;
+      div.style.left = cx + 'px';
+      div.style.top = cy + 'px';
+      div.className = 'circle2';
+      document.body.append(div);
+  
+      setTimeout(() => {
+        div.style.width = radius * 2 + 'px';
+        div.style.height = radius * 2 + 'px';
+      }, 0);};
+      
+</script>
+<button onclick="c1(1100,750,50);
+c1(800, 750, 50);
+c2(900, 800, 100);
+c2(800, 600, 100);
+c2(1000, 600, 100);
+c1(900, 400 , 100);
+c3(935, 335 , 10);
+c3(1045, 335 , 10)
+c4(950,450,30)">Центр(900, 800, 100)</button>
+
+<script>
+    function c3(cx, cy, radius) {
+      let div = document.createElement('div');
+      div.style.width = 0;
+      div.style.height = 0;
+      div.style.left = cx + 'px';
+      div.style.top = cy + 'px';
+      div.className = 'circle3';
+      document.body.append(div);
+  
+      setTimeout(() => {
+        div.style.width = radius * 4 + 'px';
+        div.style.height = radius * 2 + 'px';
+      }, 0);};
+      
+  </script>
+  <script>
+    function c4(cx, cy, radius) {
+      let div = document.createElement('div');
+      div.style.width = 0;
+      div.style.height = 0;
+      div.style.left = cx + 'px';
+      div.style.top = cy + 'px';
+      div.className = 'circle4';
+      document.body.append(div);
+  
+      setTimeout(() => {
+        div.style.width = radius * 4 + 'px';
+        div.style.height = radius * 2 + 'px';
+      }, 0);};
+      
+  </script>
+
+
+
+
+  
+
+</body>
+</html>
