@@ -4,11 +4,16 @@
 <head>
   <meta charset="utf-8">
   <style>
+    .message-ball {
+      font-size: 20px;
+      line-height: 200px;
+      text-align: center;
+    }
     .circle {
       transition-property: width, height;
       transition-duration: 2s;
       position: fixed;
-      transform: translateX(-1%) translateY(-50%);
+      transform: translateX(0%) translateY(-50%);
       background-color: rgb(255, 0, 0);
       border-radius: 0%;
     }
@@ -16,7 +21,7 @@
       transition-property: width, height;
       transition-duration: 2s;
       position: fixed;
-      transform: translateX(-1%) translateY(-50%);
+      transform: translateX(0%) translateY(-50%);
       background-color: rgb(0, 26, 255);
       border-radius: 0%;
     }
@@ -24,7 +29,7 @@
       transition-property: width, height;
       transition-duration: 2s;
       position: fixed;
-      transform: translateX(-1%) translateY(-50%);
+      transform: translateX(0%) translateY(-50%);
       background-color: rgb(0, 255, 157);
       border-radius: 50%;
     }
@@ -32,14 +37,33 @@
       transition-property: width, height;
       transition-duration: 2s;
       position: fixed;
-      transform: translateX(-1%) translateY(-50%);
+      transform: translateX(0%) translateY(-50%);
       background-color: rgb(168, 90, 149);
+      border-radius: 50%;
+    }
+    .circle5 {
+      transition-property: width, height;
+      transition-duration: 2s;
+      position: fixed;
+      transform: translateX(0%) translateY(-50%);
+      background-color: rgb(0, 0, 0);
       border-radius: 50%;
     }
   </style>
 </head>
 
 <body>
+    <button onclick="c1(1100,750,50);
+c1(800, 750, 50);
+c2(900, 800, 100);
+c2(800, 600, 100);
+c2(1000, 600, 100);
+c1(900, 400 , 100);
+c3(935, 335 , 10);
+c3(1045, 335 , 10);
+c4(950, 450, 30);">СПАСИТЕ</button>
+    <button onclick="go()";
+>ПОЖАЛУЙСТА</button>
 
   
 
@@ -75,16 +99,6 @@
       }, 0);};
       
 </script>
-<button onclick="c1(1100,750,50);
-c1(800, 750, 50);
-c2(900, 800, 100);
-c2(800, 600, 100);
-c2(1000, 600, 100);
-c1(900, 400 , 100);
-c3(935, 335 , 10);
-c3(1045, 335 , 10)
-c4(950,450,30)">Центр(900, 800, 100)</button>
-
 <script>
     function c3(cx, cy, radius) {
       let div = document.createElement('div');
@@ -117,6 +131,37 @@ c4(950,450,30)">Центр(900, 800, 100)</button>
       }, 0);};
       
   </script>
+  <script>
+    function go() {
+    showCircle(1150, 400, 100).then(div => {
+      div.classList.add('message-ball');
+      div.append("СПАСИТЕ МЕНЯ");
+    });
+  }
+
+  function showCircle(cx, cy, radius) {
+    let div = document.createElement('div');
+    div.style.width = 0;
+    div.style.height = 0;
+    div.style.left = cx + 'px';
+    div.style.top = cy + 'px';
+    div.className = 'circle5';
+    document.body.append(div);
+
+    return new Promise(resolve => {
+      setTimeout(() => {
+        div.style.width = radius * 6 + 'px';
+        div.style.height = radius * 2 + 'px';
+
+        div.addEventListener('transitionend', function handler() {
+          div.removeEventListener('transitionend', handler);
+          resolve(div);
+        });
+      }, 0);
+    })
+  }
+  </script>
+  
 
 
 
