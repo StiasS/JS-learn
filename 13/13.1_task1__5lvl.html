@@ -1,0 +1,19 @@
+<!doctype html>
+<script>
+function hi() {
+  alert(`Привет`);
+}
+function bye() {
+  alert(`Пока`);
+}
+function defaul () {
+  alert("Модуль загружен (экспорт по умолчанию)!");
+}
+function load() {
+    let say =import('./say.js');
+    hi(); // Привет!
+    bye(); // Пока!
+    defaul(); // Модуль загружен (экспорт по умолчанию)!
+  }
+</script>
+<button onclick="load()">Нажми меня</button>
