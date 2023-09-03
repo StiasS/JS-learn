@@ -1,10 +1,10 @@
 function makeObservable(target) {
-    user = new Proxy(target){
-        get(target,prop,receiver){
+    user = new Proxy(target)
+        get(target,prop,receiver)
 
         }
-    }
-  }
+    
+  
   
   let user = {};
   user = makeObservable(user);
