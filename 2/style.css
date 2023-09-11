@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(0, 6, 88);
+    padding: 0 30px;
+  
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Georgia", serif;
+    color: #ff0000;
+  }
+  
+  h1 {
+    background-color: aliceblue;
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  nav {
+    color: #0fb400;
+  }
+  
+  aside {
+    margin: 20px 0;
+  
+    color: #d101b5;
+  }
+  

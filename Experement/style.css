@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(240, 248, 255, 0.7);
+    --background: hsla(204, 25%, 3%);
+    background: url(back.jpg);
+    padding: 0 30px;
+  
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Georgia", serif;
+    color: #f7fa58;
+  }
+  header{
+    h1{background-color: rgba(240, 248, 255, 0.7);}
+  }
+  main{
+    background-color: rgba(240, 248, 255, 0.7);
+    
+  }
+  p{
+    padding-left:15px;
+  }
+  pre{
+    background-color: rgba(248, 248, 255, 0.6);
+    color: white;
+  }
+  
+  h1 {
+    background-color: rgba(240, 248, 255, 0.9);
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  nav {
+    background-color: rgba(240, 248, 255, 0.9);
+    color: #f7fa58;
+  }
+  
+  aside {
+    background-color: rgba(240, 248, 255, 0.9);
+    margin: 20px 0;
+    color: #c4c4c4;
+  }
+  footer{
+    background-color: rgba(240, 248, 255, 0.9);
+  }
