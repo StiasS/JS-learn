@@ -17,6 +17,7 @@ body {
     
   }
   p{
+    background-color: rgba(240, 248, 255, 0.7);
     padding-left:15px;
   }
   pre{
@@ -42,4 +43,17 @@ body {
   }
   footer{
     background-color: rgba(240, 248, 255, 0.9);
+  }
+  .message-ball {
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+  }
+  .circle {
+    transition-property: width, height;
+    transition-duration: 2s;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgba(240, 248, 255, 0.7);
+    border-radius: 50%;
   }
