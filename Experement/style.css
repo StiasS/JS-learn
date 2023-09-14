@@ -11,17 +11,17 @@ body {
   }
   header{
     h1{background-color: rgba(240, 248, 255, 0.7);}
+    h2{background-color: rgba(240, 248, 255, 0.7);}
   }
   main{
     background-color: rgba(240, 248, 255, 0.7);
     
   }
   p{
-    background-color: rgba(240, 248, 255, 0.7);
-    padding-left:15px;
+    padding-left:20px;
   }
   pre{
-    background-color: rgba(248, 248, 255, 0.6);
+    
     color: white;
   }
   
@@ -42,7 +42,7 @@ body {
     color: #c4c4c4;
   }
   footer{
-    background-color: rgba(240, 248, 255, 0.9);
+    background-color: rgba(240, 248, 255, 0.7);
   }
   .message-ball {
     font-size: 20px;
@@ -56,4 +56,23 @@ body {
     transform: translateX(-50%) translateY(-50%);
     background-color: rgba(240, 248, 255, 0.7);
     border-radius: 50%;
+  }
+  code {
+  font-family: "Courier New", "Courier", monospace;
+  color: #6a2cce;
+  }
+  button{
+    background-color: rgba(240, 248, 255, 0.9);
+    color: #f7fa58;
+    border-color: red
+  }
+  blockquote {
+    padding-left: 14px;
+    border-left: 2px solid #02a2ff;
+  
+    color: #02a2ff;
+
+  }
+  h2{
+    background-color: rgba(240, 248, 255, 0.7);
   }
