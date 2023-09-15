@@ -76,3 +76,20 @@ body {
   h2{
     background-color: rgba(240, 248, 255, 0.7);
   }
+  .circle1 {
+    transition-property: width, height;
+    transition-duration: 0.1s;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    color: red;
+    font-weight:1000;
+  }
+  .circle2 {
+    transition-property: width, height;
+    transition-duration: 0.5s;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(Photo.jpg);
+    border-radius: 50%;
+  }
