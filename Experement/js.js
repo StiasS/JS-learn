@@ -7,7 +7,7 @@ function go() {
   goCount++;
 
   showCircle(160, 110, 39).then(div => {
-    if (goCount >= 10) {
+    if (goCount >= 5) {
       goCount=0
       removeCircles();
       go1();
