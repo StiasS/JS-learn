@@ -97,3 +97,6 @@ body {
   fgd{
     text-align: center;
   }
+  *{
+    background:linear-gradient((#5e5e5e 85%)(#45454f 100%))
+  }
